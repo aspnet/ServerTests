@@ -53,7 +53,7 @@ namespace ServerComparison.FunctionalTests
         [InlineData(ServerType.WebListener, RuntimeFlavor.Clr, RuntimeArchitecture.x64, "http://localhost:5087/", ApplicationType.Portable)]
         public Task ResponseFormats_Windows_ConnectionClose(ServerType serverType, RuntimeFlavor runtimeFlavor, RuntimeArchitecture architecture, string applicationBaseUrl, ApplicationType applicationType)
         {
-            return ResponseFormats(serverType, runtimeFlavor, architecture, applicationBaseUrl, CheckConnectionCloseAsync, applicationType);
+            return ResponseFormats(serverType, runtimeFlavor, architecture, applicationBaseUrl, CheckConnectionCloseAndChunkedAsync, applicationType);
         }
 
         [Theory]
@@ -193,6 +193,25 @@ namespace ServerComparison.FunctionalTests
                 Assert.Null(response.Headers.TransferEncodingChunked);
                 Assert.Null(response.Headers.ConnectionClose);
                 Assert.Equal("14", GetContentLength(response));
+            }
+            catch (XunitException)
+            {
+                logger.LogWarning(response.ToString());
+                logger.LogWarning(responseText);
+                throw;
+            }
+        }
+
+        private static async Task CheckConnectionCloseAndChunkedAsync(HttpClient client, ILogger logger)
+        {
+            var response = await client.GetAsync("connectionclose");
+            var responseText = await response.Content.ReadAsStringAsync();
+            try
+            {
+                Assert.Equal("Connnection Close", responseText);
+                Assert.True(response.Headers.ConnectionClose, "/connectionclose, closed?");
+                Assert.True(response.Headers.TransferEncodingChunked);
+                Assert.Null(GetContentLength(response));
             }
             catch (XunitException)
             {
