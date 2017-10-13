@@ -1,19 +1,19 @@
 ﻿<Project>
   <PropertyGroup>
-    <InternalAspNetCoreSdkPackageVersion>2.0.2-beta-15522</InternalAspNetCoreSdkPackageVersion>
+    <InternalAspNetCoreSdkPackageVersion>2.0.2-rc1-15526</InternalAspNetCoreSdkPackageVersion>
     <MicrosoftAspNetCoreAspNetCoreModulePackageVersion>1.0.0-pre-10057</MicrosoftAspNetCoreAspNetCoreModulePackageVersion>
-    <MicrosoftAspNetCoreResponseCompressionPackageVersion>2.0.1-rtm-83</MicrosoftAspNetCoreResponseCompressionPackageVersion>
-    <MicrosoftAspNetCoreServerHttpSysPackageVersion>2.0.1-rtm-83</MicrosoftAspNetCoreServerHttpSysPackageVersion>
-    <MicrosoftAspNetCoreServerIISIntegrationPackageVersion>2.0.1-rtm-83</MicrosoftAspNetCoreServerIISIntegrationPackageVersion>
-    <MicrosoftAspNetCoreServerIntegrationTestingPackageVersion>0.4.1-rtm-83</MicrosoftAspNetCoreServerIntegrationTestingPackageVersion>
-    <MicrosoftAspNetCoreServerKestrelPackageVersion>2.0.1-rtm-83</MicrosoftAspNetCoreServerKestrelPackageVersion>
-    <MicrosoftAspNetCoreWebUtilitiesPackageVersion>2.0.1-rtm-83</MicrosoftAspNetCoreWebUtilitiesPackageVersion>
+    <MicrosoftAspNetCoreResponseCompressionPackageVersion>2.0.1-rtm-105</MicrosoftAspNetCoreResponseCompressionPackageVersion>
+    <MicrosoftAspNetCoreServerHttpSysPackageVersion>2.0.1-rtm-105</MicrosoftAspNetCoreServerHttpSysPackageVersion>
+    <MicrosoftAspNetCoreServerIISIntegrationPackageVersion>2.0.1-rtm-105</MicrosoftAspNetCoreServerIISIntegrationPackageVersion>
+    <MicrosoftAspNetCoreServerIntegrationTestingPackageVersion>0.4.1-rtm-105</MicrosoftAspNetCoreServerIntegrationTestingPackageVersion>
+    <MicrosoftAspNetCoreServerKestrelPackageVersion>2.0.1-rtm-105</MicrosoftAspNetCoreServerKestrelPackageVersion>
+    <MicrosoftAspNetCoreWebUtilitiesPackageVersion>2.0.1-rtm-105</MicrosoftAspNetCoreWebUtilitiesPackageVersion>
     <MicrosoftExtensionsConfigurationCommandLinePackageVersion>2.0.0</MicrosoftExtensionsConfigurationCommandLinePackageVersion>
     <MicrosoftExtensionsConfigurationJsonPackageVersion>2.0.0</MicrosoftExtensionsConfigurationJsonPackageVersion>
     <MicrosoftExtensionsLoggingConsolePackageVersion>2.0.0</MicrosoftExtensionsLoggingConsolePackageVersion>
     <MicrosoftExtensionsLoggingPackageVersion>2.0.0</MicrosoftExtensionsLoggingPackageVersion>
     <MicrosoftExtensionsLoggingTestingPackageVersion>2.0.0</MicrosoftExtensionsLoggingTestingPackageVersion>
-    <MicrosoftNetHttpHeadersPackageVersion>2.0.1-rtm-83</MicrosoftNetHttpHeadersPackageVersion>
+    <MicrosoftNetHttpHeadersPackageVersion>2.0.1-rtm-105</MicrosoftNetHttpHeadersPackageVersion>
     <MicrosoftNETTestSdkPackageVersion>15.3.0</MicrosoftNETTestSdkPackageVersion>
     <SerilogExtensionsLoggingPackageVersion>1.4.0</SerilogExtensionsLoggingPackageVersion>
     <SerilogSinksFilePackageVersion>3.2.0</SerilogSinksFilePackageVersion>
