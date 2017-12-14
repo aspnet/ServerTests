@@ -28,7 +28,7 @@
         "portable-net451+win8"
       ],
       "dependencies": {
-        "Microsoft.NETCore.App": "1.0.9-servicing-005017-00"
+        "Microsoft.NETCore.App": "1.0.9"
       }
     }
   },
